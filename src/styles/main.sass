@@ -1,0 +1,27 @@
+@use "variables"
+@use 'mixins'
+  
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: variables.$fontFamily
+
+body
+  background: variables.$white
+h1
+  color: variables.$primary
+  text-align: center
+  margin: 4rem
+
+a 
+  transition: .3s
+  text-decoration: none
+
+li 
+  list-style: none
+
+.wrapper
+  margin: 2rem
+  @include mixins.mobile()
+   margin: 3rem
